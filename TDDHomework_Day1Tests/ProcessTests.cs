@@ -31,7 +31,7 @@ namespace TDDHomework_Day1.Tests
         }
 
         [TestMethod()]
-        public void Get_a_group_of_3_by_Cost_field_Test()
+        public void Get_a_group_of_3_by_Cost_field_should_be_6_15_24_21_Test()
         {
             //arrange
             var target = new Process();
@@ -45,7 +45,7 @@ namespace TDDHomework_Day1.Tests
         }
 
         [TestMethod()]
-        public void Get_a_group_of_4_by_Revenue_field_Test()
+        public void Get_a_group_of_4_by_Revenue_field_should_be_50_66_60_Test()
         {
             //arrange
             var target = new Process();
