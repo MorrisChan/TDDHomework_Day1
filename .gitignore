@@ -1,0 +1,58 @@
+﻿# 這是註解123
+[Pp]recompiledWeb
+_ReSharper.NEHR
+[Oo]bj
+[Bb]in
+[Tt]emp
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.log
+*.DS_Store
+[Tt]est[Rr]esult*
+[Tt]humbs.db
+*.resharper
+
+
+# 如果你想忽略壓縮檔或一些大檔案
+*.7z
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.vspscc
+.builds
+
+# Visual Studio profiler
+*.psess
+*.vsp
+
+# ReSharper is a .NET coding add-in
+_ReSharper*
+ErrorLog.s3db
+/packages/RestSharp.104.1
+
+# Visual Studio 2015 cache/options directory
+.vs/
