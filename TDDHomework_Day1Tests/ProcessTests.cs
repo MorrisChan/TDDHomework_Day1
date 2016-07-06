@@ -50,6 +50,7 @@ namespace TDDHomework_Day1.Tests
             //arrange
             var target = new Process();
             var size = 3;
+            //should be 6, 15, 24, 21
             var expected = GetExpectedSet(1, 11, size);
             //act
             var actual = target.GetSectionResult(GetData(), size, "Cost");
@@ -64,6 +65,7 @@ namespace TDDHomework_Day1.Tests
             //arrange
             var target = new Process();
             var size = 4;
+            //should be 50, 66, 60
             var expected = GetExpectedSet(11, 11, size);
             //act
             var actual = target.GetSectionResult(GetData(), size, "Revenue");
