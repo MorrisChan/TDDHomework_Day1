@@ -30,28 +30,13 @@ namespace TDDHomework_Day1.Tests
             };
         }
 
-        private List<int> GetExpectedSet(int begin, int end, int size)
-        {
-            //建立集合
-            var range = Enumerable.Range(begin, end);
-
-            var result = new List<int>();
-            for (int i = 0; i < range.Count(); i++)
-            {                 
-                result.Add(range.Skip(i).Take(size).Sum());
-                i += size - 1;
-            }
-            return result;
-        }
-
         [TestMethod()]
         public void Get_a_group_of_3_by_Cost_field_Test()
         {
             //arrange
             var target = new Process();
             var size = 3;
-            //should be 6, 15, 24, 21
-            var expected = GetExpectedSet(1, 11, size);
+            var expected = new List<int> { 6, 15, 24, 21 };
             //act
             var actual = target.GetSectionResult(GetData(), size, "Cost");
 
@@ -65,8 +50,7 @@ namespace TDDHomework_Day1.Tests
             //arrange
             var target = new Process();
             var size = 4;
-            //should be 50, 66, 60
-            var expected = GetExpectedSet(11, 11, size);
+            var expected = new List<int> { 50, 66, 60 };
             //act
             var actual = target.GetSectionResult(GetData(), size, "Revenue");
 
