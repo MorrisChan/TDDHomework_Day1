@@ -13,6 +13,7 @@ _ReSharper.NEHR
 [Tt]est[Rr]esult*
 [Tt]humbs.db
 *.resharper
+packages/*
 
 
 # 如果你想忽略壓縮檔或一些大檔案
